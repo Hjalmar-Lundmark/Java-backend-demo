@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,7 +34,24 @@ public class DemoApplication {
 	@GetMapping("/story")
 	public String story(@RequestParam(value = "id", defaultValue = "0") String in) {
 		int id = Integer.parseInt(in);
-		return m.getScene(id);
+		String all = "";
+		JsonObject scene = m.getScene(id);
+		String text = scene.get("text").getAsString();
+		all += text + "<br><br>";
+
+		JsonArray options = m.getScene(id).get("options").getAsJsonArray();
+		if (options.isEmpty()) {
+			return all;
+		}
+		for (int i = 0; i < 2; i++) {
+			JsonObject option = options.get(i).getAsJsonObject();
+			String optionText = option.get("msg").getAsString();
+			int nextId = option.get("nextId").getAsInt();
+
+			all += ("<a href=\"story?id=" + nextId + "\">" + (i+1) + ". " + optionText + "</a><br>");
+		}
+
+		return String.format(all);
 	}
 
 	@GetMapping("/idk")

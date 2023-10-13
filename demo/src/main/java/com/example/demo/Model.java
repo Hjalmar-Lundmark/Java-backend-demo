@@ -18,9 +18,9 @@ public class Model {
         }
     }
 
-    public String getScene(int id) {
-        return arrObj[id].get("text").getAsString();
-        //return arrObj[id];
+    public JsonObject getScene(int id) {
+        //return arrObj[id].get("text").getAsString();
+        return arrObj[id];
     }
 
     /*
