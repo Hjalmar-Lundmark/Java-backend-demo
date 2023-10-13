@@ -10,7 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoApplication {
 
+	Model m;
+
+	public DemoApplication() {
+		m = new Model("story.json");
+	}
+
 	public static void main(String[] args) {
+		DemoApplication app = new DemoApplication();
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
@@ -21,6 +28,12 @@ public class DemoApplication {
 
 	// Useful links
 	// https://start.spring.io/
+
+	@GetMapping("/story")
+	public String story(@RequestParam(value = "id", defaultValue = "0") String in) {
+		int id = Integer.parseInt(in);
+		return m.getScene(id);
+	}
 
 	@GetMapping("/idk")
 	public String idk(@RequestParam(value = "name", defaultValue = "HelloWorld") String in) {

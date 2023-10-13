@@ -1,0 +1,45 @@
+[
+    {
+        "id": 0,
+        "text": "Once upon a time, in the quiet town of Solberg, nestled deep within the lush forests of Sweden, lived a man named Hjalmar Lundmark. Hjalmar was a tall, wiry fellow with a shock of unruly brown hair that seemed to perpetually defy the comb. His piercing blue eyes were always fixed on the stars that glittered in the night sky. He had a reputation in town as the eccentric stargazer, spending countless hours with his telescope, studying the cosmos from his small observatory on the outskirts of Solberg. \n\nHjalmar's fascination with the stars began in his childhood, when his grandfather would tell him stories about constellations and distant galaxies. He would spend hours with his grandfather, gazing at the night sky, and dreaming of exploring the universe. As he grew older, his passion for astronomy only deepened, and he decided to pursue it as a career.\n\nOne crisp autumn evening, as Hjalmar was peering through his telescope, he spotted something extraordinary—astreak of light cutting across the sky. It was a shooting star, and in that moment, he made a wish. \"I wish for a chance to unravel the mysteries of the universe,\" he whispered to himself.\n\nLittle did Hjalmar know, his wish could come true in the most unexpected way. \n \nThe following morning, a important-looking letter arrived in Hjalmar's letterbox. It was an invitation from the renowned Lund Observatory in Stockholm, offering him a position as a junior astronomer. It was an opportunity he knew he shouldn't pass up, but it would mean leaving behind the quiet comforts of Solberg.\n",
+        "options": [
+            {
+                "nextId": 1,
+                "msg": "Accept the offer and leave Solberg behind"
+            },
+            {
+                "nextId": 2,
+                "msg": "Decline and stay in Solberg"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "text": "Hjalmar bid farewell to his family and his beloved town, embarking on a new adventure to the bustling capital city. The observatory was a hub of activity, filled with brilliant minds and cutting-edge equipment. Hjalmar was in awe of the state-of-the-art telescopes and the vast array of resources at his disposal. \n\nAs the months passed, Hjalmar's dedication and enthusiasm caught the attention of his colleagues and mentors. He spent countless nights observing celestial phenomena, making groundbreaking discoveries, and publishing his research in prestigious scientific journals. Hjalmar's reputation as an exceptional astronomer grew, and he became known not just in Sweden but across the international scientific community. \n\nBut Hjalmar's heart was still in Solberg, and he longed for the quiet serenity of his hometown. One day, as he was studying a particularly enigmatic cluster of stars, he remembered his grandfather's tales of the wonders of the universe and the importance of sharing knowledge.\n",
+        "options": [
+            {
+                "nextId": 3,
+                "msg": "Go back to Solberg"
+            },
+            {
+                "nextId": 4,
+                "msg": "Stay in the city and work"
+            }
+        ]
+    },
+    {
+        "id": 2, 
+        "text": "Staying in Solberg means Hjalmar couldn't follow his dreams, but instead he got to live a calm life near his friends and family in Solberg. Some night staring into the sky he wonders what could have been. \n\nThe end",
+        "options": []
+    },
+    {
+        "id": 3,
+        "text": "With newfound purpose, Hjalmar decided to return to Solberg. He set up a small observatory there, inviting local children and adults alike to join him in exploring the cosmos. He became a beloved figure in the town, just as he had been in his childhood, and he shared his passion for the stars with the next generation. \n\nHjalmar Lundmark had come full circle, from a dreamy-eyed child in Solberg to a world-renowned astronomer in Stockholm and back again to his beloved hometown. His journey through the cosmos had not only enriched his life but had also ignited a spark of curiosity in the hearts of those who followed in his footsteps, reminding them that the mysteries of the universe were meant to be explored and shared with all who dared to look up and dream.\n\nThe end.",
+        "options": []
+    },
+    {
+        "id": 4, 
+        "text": "Hjalmar chooses to stay in the city and focus on his career in Astronomy. He keeps making groundbreaking discoveries and expanding our understanding of the cosmos, without ever forgeting his friends and family back in Solberg. \n\nThe end",
+        "options": []
+    }
+]
